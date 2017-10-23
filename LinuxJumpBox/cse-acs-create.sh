@@ -4,6 +4,7 @@ adminPassword=${2}
 rgName=${3}
 spName=${4}
 spSecret=${5}
+vmSize=${6}
 echo RG_NAME=$rgName >> /home/$adminUsername/acs-create.sh
 echo ACS_NAME=$adminUsername >> /home/$adminUsername/acs-create.sh 
 echo SSH_KEY_PATH='~/.ssh/id_rsa.pub' >> /home/$adminUsername/acs-create.sh 
@@ -12,7 +13,7 @@ echo AGENT_OS_DISK=120 >> /home/$adminUsername/acs-create.sh
 echo SP_NAME=$spName >> /home/$adminUsername/acs-create.sh
 echo SP_SECRET=$spSecret >> /home/$adminUsername/acs-create.sh
 echo DNS_PREFIX=$adminUsername >> /home/$adminUsername/acs-create.sh
-echo VM_SIZE='Standard_D2_v2' >> /home/$adminUsername/acs-create.sh
+echo VM_SIZE=$vmSize >> /home/$adminUsername/acs-create.sh
 echo ADMIN_NAME=$adminUsername >> /home/$adminUsername/acs-create.sh
 echo TENANT_ID='12c5db39-b62e-4301-b848-09acda2692a5' >> /home/$adminUsername/acs-create.sh
 
