@@ -25,5 +25,5 @@ $SP_SECRET --dns-prefix $DNS_PREFIX --master-count 1 --master-vm-size \
 $VM_SIZE --master-storage-profile ManagedDisks --master-osdisk-size \
 $MASTER_OS_DISK --agent-count 2 --agent-vm-size $VM_SIZE \
 --agent-storage-profile ManagedDisks --agent-osdisk-size $AGENT_OS_DISK \
---admin-username $ADMIN_NAME --generate-ssh-keys >> /home//acs-create.sh
+--admin-username $ADMIN_NAME --generate-ssh-keys >> /home/$adminUsername/acs-create.sh
 
